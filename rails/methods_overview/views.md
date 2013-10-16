@@ -1,6 +1,29 @@
 Views
 =====
 
+Partials
+--------
+
+A partial lives in the views folder for whatever it's for, and begins with an underscore e.g. 'views/users/_form.html.erb'.
+
+When rendering a partial, omit the underscore. If it's in the same folder as the view you're calling it from, you don't have to specify the folder name either.
+
+    <%= render "form" %>
+    <%= render "shared/menu" %>
+
+You can pass variables to the partial using locals, or via the :object option (which gives you a variable with the same name as the partial)
+
+    <%= render partial: "customer", locals: {customer: @new_customer} %>
+    <%= render partial: "customer", object: @new_customer %>
+
+If you have an instance of a model, you can just pass that straight to render & it'll try to render a partial with the name of the class:
+
+    <%= render @customer %>  # Tries to render /views/customers/_customer.html.erb & passes the @customer variable to it
+
+If you have a collection of instances, you can render all of them by passing the collection to render.
+
+    <%= render @customers %>  # Renders /views/customers/_customer.html.erb once for each customer.
+
 Assets
 ------
 
