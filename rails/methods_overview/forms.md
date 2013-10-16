@@ -1,6 +1,8 @@
 Forms
 =====
 
+Docs: http://guides.rubyonrails.org/form_helpers.html
+
 Broadly speaking, there are two kinds of form helpers in Rails: `form_tag` and `form_for`.
 
 `form_tag` and the *_tag helpers will generate the HTML for a form & inputs for you, but require lots of arguments passed to them.
@@ -9,6 +11,8 @@ Broadly speaking, there are two kinds of form helpers in Rails: `form_tag` and `
 
 form_for
 --------
+
+Docs: http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html
 
 `form_for` takes an awful lot of options & is very flexible, but the first argument must be an instance of a model. If the model has a resource entry in the routes file, then the url doesn't need to be specified.
 
@@ -69,6 +73,8 @@ For dates, you can either use `date_field` to generate an HTML5 date field, or `
 form_tag
 --------
 
+Docs: http://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html
+
 `form_tag` doesn't take an object and doesn't provide a form builder object. It's useful if you don't have a nice active-model-style instance (say, it's a search form or some such).
 The first argument to `form_tag` is the path to send to.
 
@@ -81,7 +87,7 @@ By default `form_tag` makes a POST request.
 Objectless input helpers
 ------------------------
 
-The input helpers that end in _tag don't need a form builder object or an instance, so you can use those in `form_tag` blocks. (You can also use them in `form_for` block.) The first argument is the name of the field, the second is the value.
+The input helpers that end in _tag don't need a form builder object or an instance, so you can use these in `form_tag` blocks. (You can also use them in `form_for` block, if you want to, but you can't use form_for inputs in a form_tag block.) The first argument is the name of the field, the second is the value.
 
     label_tag(:first_name)
     text_field_tag(:first_name)

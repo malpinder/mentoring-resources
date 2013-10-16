@@ -4,6 +4,9 @@ Views
 Partials
 --------
 
+Rails Guide: http://guides.rubyonrails.org/layouts_and_rendering.html#using-partials
+Docs: http://api.rubyonrails.org/classes/ActionView/PartialRenderer.html
+
 A partial lives in the views folder for whatever it's for, and begins with an underscore e.g. 'views/users/_form.html.erb'.
 
 When rendering a partial, omit the underscore. If it's in the same folder as the view you're calling it from, you don't have to specify the folder name either.
@@ -59,6 +62,8 @@ In your view:
 HTML Generators
 ---------------
 
+Docs: http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html
+
 Use `link_to` to generate an <a> tag. The first argument is the text, the second is the url. You can use strings, path helpers, or if the object has a resourceful-route just the object.
 
     link_to "Your profile", '/profile'
@@ -79,6 +84,10 @@ Use `content_tag` to generate a tag of any kind. (It's mostly useful in helper m
 
 Helpers
 -------
+
+Docs: http://api.rubyonrails.org/classes/ActionView/Helpers/NumberHelper.html
+http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html
+http://api.rubyonrails.org/classes/ActionView/Helpers/DateHelper.html
 
 `current_page?` will return true or false if a given url is the current page.
 
