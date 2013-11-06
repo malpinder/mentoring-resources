@@ -4,7 +4,8 @@ Modelling a Music Collection
 Draw out a diagram of how you'd model a music collection. Each model should be a box, with a list of it's relations & important fields underneath. Draw lines connecting the models to indicate the relations.
 
 eg:
-__________________                  _________________
+````
+.__________________.               ._________________.
 |Track            |                |Album            |
 |-----------------|                |-----------------|
 |belongs_to :album|   belongs_to   |has_many :tracks |
@@ -13,6 +14,7 @@ __________________                  _________________
 |album_id         |    has_many    |title            |
 |title            |<---------------|release_year     |
 |_________________|                |_________________|
+````
 
 You can make the system as complicated or a simple as you like.
 
