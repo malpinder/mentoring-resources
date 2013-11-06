@@ -36,7 +36,7 @@ These might help guide your thinking, or prompt you into introducing a new conce
 - How would you find all the albums with a certain genre? How about all the artists of that genre?
 - If you represent popularity as the number of 'likes' on a track, how would you find an artist's most popular track?
 - How would you find the most popular artists for a given genre? (i.e. the ones with the most likes on their tracks)
-- Prince changed his name to a symbol (or 'the artist formerly known as Prince') and then back again. How would you list all the tracks he's - done? How would you represent the artist for each track?
+- Prince changed his name to a symbol (or 'the artist formerly known as Prince') and then back again. How would you list all the tracks he's done? How would you represent the artist for each track?
 - The White Album by the Beatles was first released in 1986, and a remastered version was released in 2009. How would you represent that?
 
 Further Work
