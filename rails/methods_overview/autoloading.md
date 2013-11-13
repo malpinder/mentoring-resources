@@ -14,7 +14,7 @@ If you call a class that the environment doesn't know about, because you haven't
 
     class SpecialAccount < BasicAccount
 
-then Rails will go look for a file in the models directory that is named 'account.rb'. This is why you don't have require calls to all your models littering the controllers and views.
+then Rails will go look for a file in the models directory that is named 'basic_account.rb'. This is why you don't have require calls to all your models littering the controllers and views.
 
 Two caveats:
 

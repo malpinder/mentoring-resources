@@ -39,7 +39,7 @@ Use `stylesheet_link_tag` and `javascript_include_tag` to easily include css & j
 Content panes
 -------------
 
-If you need to put something in the head or the footer, but only for a single page, use `content_for`.
+If you need to put something in the head or the footer, but not the same thing everywhere, use `content_for`.
 
 In your layout:
 
