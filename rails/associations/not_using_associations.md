@@ -21,7 +21,7 @@ end
 business = Business.find(id: 131)
 
 # Get it's loan
-loan = Loan.where(business_id: business.id).limit(1).first
+loan = Loan.where(business_id: business.id).first
 
 # Get the repayments for the loan
 repayments = Repayments.where(loan_id: loan.id)

@@ -23,9 +23,9 @@ Notice that neither has a permissions_id or borrower_id. HABTM relies on a join 
 
 You'll need to create the join table in a migration by yourself. It should be named as a combination of the two classes.
 ````
-    create_table :borrower_permissions do |t|
+    create_table :borrower_permission do |t|
       t.integer :borrower_id
-      t.integer :permissions_id
+      t.integer :permission_id
     end
 ````
 

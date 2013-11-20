@@ -12,6 +12,7 @@ end
 class Repayment < ActiveRecord::Base
   # attributes:
   #   :id, :loan_id, :amount, :paid, :due_date
+  belongs_to :loan
 end
 
 # Get a loan
@@ -50,7 +51,7 @@ Repayment.new(loan: loan)
 If it's not saved, then none of the children are saved. If the loan is saved after they are added, all the records are saved together.
 
 Deleting
----------
+--------
 
 By default ActiveRecord will delete the foreign_key from the repayments (in this case, loan_id) but leave the records hanging around, loanless.
 

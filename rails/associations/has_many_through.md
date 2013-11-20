@@ -3,7 +3,7 @@ Has_* :through
 
 has_one :through and has_many :through is a way of leap-frogging a model to get to that model's associations.
 
-Usually the pattern is to promote a 'join table' to a first-class model, with it's own id and attributes:
+Usually the pattern is to promote a 'join table' to a model, with it's own id and attributes:
 ````
 class Loan < ActiveRecord::Base
   # attributes:
