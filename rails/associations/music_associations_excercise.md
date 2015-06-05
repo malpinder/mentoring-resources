@@ -30,7 +30,7 @@ These might help guide your thinking, or prompt you into introducing a new conce
 - Given an album, how would you find it's artist? How can you find all the albums an artist has released?
 - How would you handle a track that appears on multiple albums? 
 - How would you handle compilation albums, where each track is by a different artist?
-- The Grey Album is by DangerMouse, Jay-Z and The Beatles. How would you model that? Given that album, how would you find all the albums The - Beatles have done?
+- The Grey Album is by DangerMouse, Jay-Z and The Beatles. How would you model that? Given that album, how would you find all the other albums each of those artists did?
 - Snoop Dogg has done several collaborations with Kelly Rowland. How would you find all the tracks they were both on?
 - How would you find the genre or genres of an album? How about the genres of an artist?
 - How would you find all the albums with a certain genre? How about all the artists of that genre?
